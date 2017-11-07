@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:ns0="http://schemas.android.com/apk/res/android"
+    ns0:layout_width="match_parent"
+    ns0:layout_height="match_parent"
+    ns0:background="@mipmap/fm_right_menu_bg"
+    ns0:gravity="center"
+    ns0:orientation="vertical">
+
+    <LinearLayout
+        ns0:id="@+id/paste_out_panel"
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginRight="20dp"
+        ns0:layout_marginBottom="20dp"
+        ns0:visibility="gone">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/paste_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/paste_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/paste" />
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="粘贴"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/delete_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/delete_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/pic_delete" />
+
+            <TextView
+                ns0:id="@+id/textView"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="删除"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/copy_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/copy_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/copy" />
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_gravity="right"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="复制"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/cut_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/cut_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/cut" />
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_gravity="right"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="剪切"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/rename_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/rename_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/copy" />
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_gravity="right"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="重命名"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/createFolder_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/newFolder_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/new_folder"/>
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_gravity="right"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="新建文件夹"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        ns0:layout_width="match_parent"
+        ns0:layout_height="wrap_content"
+        ns0:orientation="horizontal"
+        ns0:layout_marginBottom="20dp"
+        ns0:layout_marginRight="20dp">
+
+        <Button
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:visibility="invisible"
+            ns0:layout_weight="5"/>
+
+        <RelativeLayout
+            ns0:id="@+id/fileInfo_panel"
+            ns0:layout_width="0dp"
+            ns0:layout_height="wrap_content"
+            ns0:layout_weight="1"
+            ns0:background="@drawable/menu_item_selector"
+            ns0:focusable="true">
+
+            <ImageView
+                ns0:id="@+id/fileInfo_icon"
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_centerVertical="true"
+                ns0:layout_alignParentLeft="true"
+                ns0:src="@mipmap/pic_details"/>
+
+            <TextView
+                ns0:layout_width="wrap_content"
+                ns0:layout_height="wrap_content"
+                ns0:layout_gravity="right"
+                ns0:layout_alignParentRight="true"
+                ns0:layout_centerVertical="true"
+                ns0:text="文件属性"
+                ns0:textColor="@color/colorWhite"
+                ns0:textSize="40px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

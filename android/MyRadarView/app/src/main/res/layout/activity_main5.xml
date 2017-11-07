@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.yishe.myradarview.View.PopStarView
+        android:id="@+id/popstar"
+        android:layout_width="700px"
+        android:layout_height="600px"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/start"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="开始"/>
+    <Button
+        android:id="@+id/end"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="停止"/>
+</RelativeLayout>

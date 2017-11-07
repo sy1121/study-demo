@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="文件名"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorblack">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件大小："
+            android:textColor="@color/colorlightgrey"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fileinfo_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.7Mb"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modify_time_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改时间："
+            android:textColor="@color/colorlightgrey"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/fileinfo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-09-21 15:44"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件位置："
+            android:textSize="15dp"
+            android:textColor="@color/colorlightgrey"/>
+
+        <TextView
+            android:id="@+id/fileinfo_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/storge/sdcard/0/proinfo/record.txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fileinfo_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:background="@drawable/buttonbackground"/>
+</LinearLayout>

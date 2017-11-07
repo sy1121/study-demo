@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pasting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="粘贴中"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorblack"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/paste_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在处理(2/10)："
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/paste_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="proinfo.txtsdfasdfasdfasdfasdfasdfasdfasdfasdfa"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/paste_count_text"/>
+
+        <TextView
+            android:id="@+id/paste_progress_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="37%"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <com.example.yishe.filemanager.View.ProgressView
+            android:id="@+id/paste_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fileinfo_cancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonbackground"
+        android:padding="5dp"
+        android:text="取消"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadarView">
+        <attr name="irotate" format="integer"/>
+        <attr name="orotate" format="integer"/>
+        <attr name="iround" format="integer"/>
+        <attr name="oround" format="integer"/>
+    </declare-styleable>
+
+</resources>

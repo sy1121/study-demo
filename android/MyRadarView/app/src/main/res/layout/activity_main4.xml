@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <com.example.yishe.myradarview.View.LeafProgressBar
+        android:id="@+id/leaf_progress"
+        android:layout_width="302dp"
+        android:layout_height="61dp" />
+
+        <ImageView
+            android:id="@+id/fenshan"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/fengshan"
+            android:layout_margin="13dp"
+            android:layout_alignRight="@id/leaf_progress"/>
+    </RelativeLayout>
+
+</LinearLayout>
