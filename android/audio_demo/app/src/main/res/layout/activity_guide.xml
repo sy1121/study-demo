@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GuideActivity">
+
+    <Button
+        android:id="@+id/audio_record_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音频录制播放"/>
+    <Button
+        android:id="@+id/camere_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频预览"/>
+    <Button
+        android:id="@+id/decode_mp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解码视频"/>
+</LinearLayout>
