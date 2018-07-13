@@ -8,7 +8,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 public class CameraPreviewActivity extends Activity implements SurfaceHolder.Callback{
-
+  /*  参考: 从camera中取源编码生成mp4
+    https://github.com/zhongjihao/AVMediaCodecMP4*/
     private SurfaceView mSurfaceView;
     private Camera camera;
     private VideoEncoder videoEncoder;
